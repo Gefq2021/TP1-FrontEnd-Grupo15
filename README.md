@@ -39,6 +39,8 @@ TP1-FRONTEND/
 │   ├── daenerys-targaryen.jpg
 │   ├── jaime-lannister.jpeg
 │   └── tyrion-lannister.jpg
+├── proyect-log/
+│   ├── log.html
 ├── members/
 │   ├── member1.html
 │   ├── member2.html
@@ -57,6 +59,7 @@ TP1-FRONTEND/
 ### Páginas de integrantes (ej: `member1.html`)
 - **Efecto de overlay oscuro** sobre la imagen de fondo para mejorar la legibilidad.
 - **Tarjeta con sombra y borde** que se muestra centrada y con estilo cohesivo.
+- **Frase representativa** cada integrante o personaje tiene un botón que mostrará una alerta con una frase que lo identifique.
 
 ---
 
@@ -79,7 +82,7 @@ Puedes ver el proyecto en vivo aquí:
 ## 🔗 Enlace al Proyecto Desplegado
 
 Puedes ver el proyecto en vivo aquí:  
-👉 [https://tp1-frontend-grupo15.vercel.app](https://tp1-frontend-grupo15.vercel.app) *(ejemplo de URL)*
+👉 [https://tp1-frontend-grupo15.vercel.app](https://tp1-frontend-grupo15.vercel.app)
 
 ---
 
@@ -94,14 +97,14 @@ Puedes ver el proyecto en vivo aquí:
 
 ## 📘 Bitácora del Proyecto
 
-La sección **"Bitácora del proyecto"** en la página principal documenta las etapas de desarrollo:
+La sección **"Bitácora del proyecto"** en la página principal documenta como comenzamos a desarrollar el proyecto. Usamos una estructura orientada a la temática de la página
+y simulamos que nos situamos como un personaje de la misma serie. Añadimos un botón que nos lleva a la página de la bitácora en donde nos explayamos y dejamos espacio
+para futuras entregas.
 
-1. **Planeación**
-2. **Diseño y estilo**
-3. **Implementación**
-4. **Pruebas y ajustes**
-
-*(Actualmente con texto placeholder, será ampliada en próximas entregas.)*
+Ya en la página individual de la bitácora presentamos:
+1. **Decisiones de diseño**
+2. **Dificultades encontradas**
+3. **Cambios**
 
 ---
 
@@ -113,6 +116,7 @@ La sección **"Bitácora del proyecto"** en la página principal documenta las e
 - [x] Diseño responsive con breakpoints en 400px, 900px y 1200px.
 - [x] Interactividad con JavaScript en portada y páginas individuales.
 - [x] Estructura de archivos clara y README completo.
+- [x] Botón de retorno al inicio en cada pagina individual.
 
 ---
 
