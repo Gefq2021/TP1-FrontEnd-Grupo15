@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap');
 
 :root {
   --primary-color: #0096c7;
@@ -43,19 +43,40 @@ body {
   font-size: 1.5rem;
 }
 
-button {
+#about-us-btn,
+.btn {
+  font-size: 1.4rem;
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   margin-top: 20px;
   padding: 10px 20px;
   border: none;
   background: var(--primary-color);
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-button:hover {
-  background: #0077a0;
+.btn:hover {
+  background: #015875;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+}
+
+
+#about-us p,
+#project-log p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 .team-section {
@@ -64,6 +85,7 @@ button:hover {
 }
 
 .team-section h2 {
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   margin-bottom: 40px;
 }
@@ -116,7 +138,7 @@ button:hover {
   border: 3px solid var(--primary-color);
 }
 
-.team-card .btn-discover {
+.btn-discover {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 14px;
@@ -124,11 +146,11 @@ button:hover {
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   transition: background 0.2s;
 }
 
-.team-card .btn-discover:hover {
+.btn-discover:hover {
   background: #444;
 }
 
@@ -239,20 +261,75 @@ button:hover {
   color: #ddd;
 }
 
-.btn-link {
-  display: inline-block;
-  margin-top: 15px;
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 6px;
-  background: var(--primary-color);
-  transition: background 0.3s;
+.log-page {
+  min-height: 100vh;
+  background: url("../img/got-dragon.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px;
+  color: #eee;
+  font-family: "Montserrat", sans-serif;
 }
 
-.btn-link:hover {
-  background: #015875;
+.log-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
 }
+
+.log-container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+}
+
+.log-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0096c7;
+}
+
+.log-intro {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #ccc;
+}
+
+.log-entry {
+  margin-bottom: 40px;
+}
+
+.log-entry h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.log-entry h3 {
+  color: #0096c7;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.log-entry p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
 /* === MEDIA QUERIES === */
 
 /* Móviles pequeños <= 400px */
@@ -260,20 +337,25 @@ button:hover {
   .main-text h1 {
     font-size: 2rem;
   }
+
   .main-text p {
     font-size: 1rem;
   }
+
   .team-card {
     width: 160px;
     padding: 15px;
   }
+
   .team-card img {
     width: 70px;
     height: 70px;
   }
+
   .member-card {
     padding: 20px;
   }
+
   .member-photo img {
     width: 120px;
     height: 120px;
@@ -285,15 +367,19 @@ button:hover {
   .main-text h1 {
     font-size: 3rem;
   }
+
   .main-text p {
     font-size: 1.2rem;
   }
+
   .team-card {
     width: 180px;
   }
+
   .member-card {
     padding: 25px 30px;
   }
+
   .member-photo img {
     width: 150px;
     height: 150px;
@@ -305,9 +391,11 @@ button:hover {
   .main-text h1 {
     font-size: 5rem;
   }
+
   .main-text p {
     font-size: 1.8rem;
   }
+
   .team-card {
     width: 240px;
   }
