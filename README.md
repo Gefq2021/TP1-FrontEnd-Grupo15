@@ -82,7 +82,7 @@ Puedes ver el proyecto en vivo aquí:
 ## 🔗 Enlace al Proyecto Desplegado
 
 Puedes ver el proyecto en vivo aquí:  
-👉 [https://tp1-frontend-grupo15.vercel.app](https://tp1-frontend-grupo15.vercel.app)
+👉 [https://grupo15-tp1.vercel.app/](https://grupo15-tp1.vercel.app/)
 
 ---
 
